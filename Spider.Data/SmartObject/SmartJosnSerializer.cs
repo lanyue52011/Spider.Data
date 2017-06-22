@@ -7,7 +7,7 @@
 
     public class SmartJosnSerializer
     {
-        private static JavaScriptSerializer _jss = new JavaScriptSerializer();
+        private static JavaScriptSerializer _jss = new JavaScriptSerializer(){MaxJsonLength = Int32.MaxValue};
 
         static SmartJosnSerializer()
         {
